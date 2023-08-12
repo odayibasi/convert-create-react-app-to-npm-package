@@ -1,6 +1,7 @@
 {
   "name": "@odayibasi/sample-umd",
   "main": "build/static/js/main.js",
+  "types": "build/static/js/main.d.ts",
   "style": "build/static/css/main.css",
   "files": [
     "build"
@@ -70,7 +71,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "build:umd": "node scripts/build.umd.js",
+    "build:umd": "node scripts/build.umd.js && cp -R  ./types/* ./build/static/js",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
