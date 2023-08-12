@@ -4,6 +4,10 @@ import "./SampleUMDApp.scss";
 import NumberMultiplier from "components/NumberMultiplier";
 
 class SampleUMDApp extends React.Component {
+  constructor(props) {
+    super(props);
+    console.log("SampleUMDApp constructor");
+  }
   render() {
     return (
       <div className="app">
