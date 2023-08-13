@@ -5,12 +5,14 @@
   .app-logo {
     height: 40px;
     pointer-events: none;
+    width: 40px;
   }
 
-  @media (prefers-reduced-motion: no-preference) {
-    .app-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
+  .app-logo-src {
+    height: 40px;
+    pointer-events: none;
+    width: 40px;
+    content: url("./assets/images/logo.svg");
   }
 
   .app-header {

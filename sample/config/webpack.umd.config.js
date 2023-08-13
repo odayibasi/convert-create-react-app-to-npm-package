@@ -206,7 +206,7 @@ module.exports = function (webpackEnv) {
       path: paths.appBuild,
       filename: "static/js/[name].js",
       chunkFilename: "static/js/[name].chunk.js",
-      assetModuleFilename: "static/media/[name].[hash][ext]",
+      assetModuleFilename: "static/media/[name].[ext]",
       library: "@odayibasi/sample-umd",
       libraryTarget: "umd",
     },
@@ -378,7 +378,7 @@ module.exports = function (webpackEnv) {
                 {
                   loader: require.resolve("file-loader"),
                   options: {
-                    name: "static/media/[name].[hash].[ext]",
+                    name: "static/media/[name].[ext]",
                   },
                 },
               ],
